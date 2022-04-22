@@ -1,0 +1,35 @@
+<Window x:Class="WpfApplication1.AddItemWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="clr-namespace:WpfApplication1"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        mc:Ignorable="d"
+        Title="Add Item" Height="550" Width="950">
+    <Grid>
+        <DatePicker x:Name="datum" Width="100" Height="25" SelectedDateFormat="Short" SelectedDate="{x:Static sys:DateTime.Now}" VerticalAlignment="Top" Margin="0,50,0,0" ></DatePicker>
+        <ComboBox x:Name="druh" Width="100" Height="25" VerticalAlignment="Top" Margin="0,100,0,0" >
+            <ComboBoxItem Content="Prijmy"></ComboBoxItem>
+            <ComboBoxItem Content="Vydaje"></ComboBoxItem>
+        </ComboBox>
+        <ComboBox x:Name="ucet" Width="100" Height="25" VerticalAlignment="Top" Margin="0,150,0,0" >
+            <ComboBoxItem Content="Bezny"></ComboBoxItem>
+            <ComboBoxItem Content="Kreditni"></ComboBoxItem>
+            <ComboBoxItem Content="Hotovost"></ComboBoxItem>
+        </ComboBox>
+        <TextBox Width="100" Height="25" x:Name="penez" VerticalAlignment="Top" Margin="0,200,0,0" ></TextBox>
+        <ComboBox x:Name="kategorie" Width="100" Height="25" VerticalAlignment="Top" Margin="0,250,0,0" >
+            <ComboBoxItem Content="Jdilo"></ComboBoxItem>
+            <ComboBoxItem Content="Bydleni"></ComboBoxItem>
+            <ComboBoxItem Content="Elektronika"></ComboBoxItem>
+        </ComboBox>
+        <ComboBox x:Name="osoba" Width="100" Height="25" VerticalAlignment="Top" Margin="0,300,0,0" >
+            <ComboBoxItem Content="Radim"></ComboBoxItem>
+            <ComboBoxItem Content="Ales"></ComboBoxItem>
+            <ComboBoxItem Content="Milan"></ComboBoxItem>
+        </ComboBox>
+        <Button Content="Add" HorizontalAlignment="Left" Margin="200,0,0,75" VerticalAlignment="Bottom" Width="100" Height="30" Click="add"/>
+        <Button Content="Cancel" HorizontalAlignment="Right" Margin="0,0,200,75" VerticalAlignment="Bottom" Width="100" Height="30" Click="cancel"/>
+    </Grid>
+</Window>

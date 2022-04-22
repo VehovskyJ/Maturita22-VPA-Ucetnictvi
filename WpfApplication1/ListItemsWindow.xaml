@@ -1,0 +1,15 @@
+<Window x:Class="WpfApplication1.ListItemsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="clr-namespace:WpfApplication1"
+        mc:Ignorable="d"
+        Title="Item List" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="datagrids" HorizontalAlignment="Left" Height="330.007" Margin="10,10,0,0" VerticalAlignment="Top" Width="772">
+        </DataGrid>
+        <Button Click="ButtonBase_OnClick" Content="Ulozit" HorizontalAlignment="Left" Margin="355.382,362.244,0,0" VerticalAlignment="Top" Width="75"/>
+
+    </Grid>
+</Window>
